@@ -56,7 +56,7 @@ ng serve -o
    • In the Team View of the app you will see the Team list in which you can see team memeber of the particular Team by clicking on showmember button.
    ![Screenshot](/src/assets/Team.png "Header")
    • To see individual member info from the Team cleck on that memeber and a card will open on left side of it.To clode that card close button is provided.
-   ![Screenshot](/app/src/assets/member.png "Header")
+   ![Screenshot](/src/assets/member.png "Header")
 
 # Contact
 
