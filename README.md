@@ -41,20 +41,20 @@ ng serve -o
 1. User View
    • As you will redirected to the User View of the App
    and if you want to navigate to Team View than in header section you will find the option to navigate.
-   ![Screenshot](/app/src/assets/header.png "Header")
+   ![Screenshot](/src/assets/header.png "Header")
 
 • Now in User View you will find searchbar and filter like gender,domain nad availibility by which you can search user acoording to this three filter.
-![Screenshot](/app/src/assets/filters.png "Header")
+![Screenshot](/src/assets/filters.png "Header")
 
 • To create Team you need to select the team, to select the team there is button name select user is provided that enable you for selecting users for a team.
-![Screenshot](/app/src/assets/selectUser.png "Header")
+![Screenshot](/src/assets/selectUser.png "Header")
 
 • For creating a team after the user get selected you have createTeam button in filter section which will open a Pop up where you cand define a Team Name and add button will add user to data.json file.
-![Screenshot](/app/src/assets/addUser.png "Header")
+![Screenshot](/src/assets/addUser.png "Header")
 
 2. Team View
    • In the Team View of the app you will see the Team list in which you can see team memeber of the particular Team by clicking on showmember button.
-   ![Screenshot](/app/src/assets/Team.png "Header")
+   ![Screenshot](/src/assets/Team.png "Header")
    • To see individual member info from the Team cleck on that memeber and a card will open on left side of it.To clode that card close button is provided.
    ![Screenshot](/app/src/assets/member.png "Header")
 
