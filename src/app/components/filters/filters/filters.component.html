@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center justify-content-md-start gap-3  filter-container">
+        <div class="filter-group col-3 col-md-3">
+          <label for="genderFilter">Gender:</label>
+          <select id="genderFilter" [(ngModel)]="selectedGender" (change)="applyGenderFilter()" class="form-control ">
+            <option  value="">All</option>
+            <option *ngFor="let g of genders" [value]="g">{{g}}</option>
+          </select>
+        </div>
+
+        <div class="filter-group col-4 col-md-3 ">
+          <label for="domainFilter">Domain:</label>
+          <select id="domainFilter" [(ngModel)]="selectedDomain" (change)="applyDomainFilter()" class="form-control">
+            <option value="">All</option>
+            <option *ngFor="let domain of domains" [value]="domain">{{ domain }}</option>
+          </select>
+        </div>
+
+        <div class="filter-group col-3 col-md-3 ">
+          <label for="availabilityFilter">Available:</label>
+          <select id="availabilityFilter" [(ngModel)]="selectedAvailability" (change)="applyAvailabilityFilter()" class="form-control">
+            <option value="">All</option>
+            <option value=true>Available</option>
+            <option value=false>Not Available</option>
+          </select>
+        </div>
+    </div>
+  </div>
+</div>

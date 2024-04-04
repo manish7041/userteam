@@ -1,0 +1,20 @@
+<div class="card mb-3 p-4 user-card" style="min-width: 400px;" appUserHighlited [selectedUserList]="selectedUsers" #trf [user]="data">
+  <label *ngIf="conditionToCreateTeam">
+    <input type="checkbox" appUserHighlited [selectedUserList]="selectedUsers" [user]="data" #trf (change)="selectUser(data)">
+  </label>
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-4">
+      <img [src]="user.avatar" class="img" alt="User Avatar">
+      <p>Available</p><span class="fs-5">{{ data.available ? 'Yes' : 'No'}}</span>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="" style="font-size: 18px;">{{ data.first_name + " " + data.last_name }}</h5>
+        <p class="fs-6">Domain:{{data.domain.slice(0,-4)}}</p>
+        <p>Gender: <span>{{ data.gender }}</span></p>
+        <p class="text-muted" style="max-height: 30px;
+          overflow-y:hidden;">{{data.email.slice(0,data.email.length -2)}}</p>
+      </div>
+    </div>
+  </div>
+</div>

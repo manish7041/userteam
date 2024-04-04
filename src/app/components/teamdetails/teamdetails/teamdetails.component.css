@@ -1,0 +1,23 @@
+/* team-detail.component.css */
+.team-detail-container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.team-details {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.team-details p {
+  margin: 0;
+}
+
+.team-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.team-details li {
+  margin-left: 20px;
+}

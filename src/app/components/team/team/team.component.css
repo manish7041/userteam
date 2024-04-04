@@ -1,0 +1,113 @@
+/* team-details.component.css */
+.team-container {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f7eeee;
+  position: relative;
+  
+}
+.member-detail{
+  position: sticky;
+  
+}
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.team-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.team-info {
+  display: flex;
+  align-items: center;
+}
+
+.member-count {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.toggle-btn {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+.member-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ddd;
+}
+
+.member-list:nth-child(odd) {
+  background-color: #b5b3b3;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+cursor: pointer;
+
+}
+
+.member-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.member-details {
+  /* position: relative; */
+  display: flex;
+justify-content: space-between;
+align-content: start;
+  width: 100%;
+}
+.member:hover{
+  background-color: #f3eded;
+  
+}
+.member-name {
+  align-self: self-start;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.member-domain {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.member-availability {
+  color: green;
+  font-weight: bold;
+}
+
+
+.bottom{
+  top: 30%;
+}
+.deatilSingle{
+  z-index: 1000;
+}

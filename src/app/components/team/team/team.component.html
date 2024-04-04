@@ -1,0 +1,38 @@
+
+<div class="container mt-5">
+  <!-- <h3 class="text-light">Team Section</h3> -->
+  <div class="row d-flex-column">
+    
+    <div class="col-lg-6 deatilSingle">
+      <div class="member-detail position-fixed" *ngIf="showMemberVisible">
+        <app-usercard [user]="selectedMember"></app-usercard>
+        <button (click)="hideDetail()" class="position-absolute btn btn-danger">Close Card</button>
+
+      </div>
+    </div>
+    <div class=" col-lg-6 ">
+      <div class="team-container">
+        <div *ngFor="let team of teams" class="team-item">
+          <div class="team-header">
+            <h2 class="team-name">{{ team.name }}</h2>
+            <div class="team-info">
+              <span class="member-count">Members: {{ team.members.length }}</span>
+              <button (click)="toggleMemberList(team)" class="btn btn-primary toggle-btn">{{ team.isMemberListVisible ? 'Hide Members' : 'Show Members' }}</button>
+            </div>
+          </div>
+          <ul class="member-list" *ngIf="team.isMemberListVisible">
+            <li class="member" *ngFor="let member of team.members" (click)="showDetail(member)">
+              <img class="member-avatar" [src]="member.avatar" alt="Avatar">
+              <div class="member-details">
+                <div class="member-name">{{ member.first_name }} {{ member.last_name }}</div>
+                <div class="member-domain">{{ member.domain }}</div>
+                <div class="member-availability">{{ member.available ? 'Available' : 'Not Available' }}</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
