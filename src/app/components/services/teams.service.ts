@@ -8,7 +8,9 @@ import { Users } from 'src/app/models/user.model';
   providedIn: 'root',
 })
 export class TeamsService {
-  private apiUrl: string = 'http://localhost:3000/teams';
+  // private apiUrl: string = 'http://localhost:3000/teams';
+  private apiUrl: string = 'https://userdata-jsonserver.onrender.com/teams';
+
   selectedUsers: Users[] = [];
   teams: any = [];
   teamLength: number;

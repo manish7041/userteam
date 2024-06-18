@@ -32,6 +32,8 @@ export class UserlistComponent implements OnInit {
     // Fetch users from UserService
     let ab = this.filterService.dataObservable.subscribe((res) => {
       this.users = res;
+      console.log(res);
+      
     });
     this.selectedUsers = this.teamService.selectedUsers;
   }
